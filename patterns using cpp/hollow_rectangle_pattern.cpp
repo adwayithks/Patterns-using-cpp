@@ -1,48 +1,65 @@
 #include <iostream>
 
+using namespace std;
+
 int getIntFromUser()
 {
     int input;
-    std::cin>>input;
+    cin>>input;
 //    std::cout<<input;
     return input;
 }
 
 int main()
 {   
-    std::cout<<" Enter rows and colomns seperated by a space : ";
+    cout<<" Enter rows and colomns seperated by a space : ";
     int row{getIntFromUser()};
 //    std::cout<<row;
     int col{getIntFromUser()};
 //    std::cout<<row<<" "<<col<<std::endl;
-    std::cout<<std::endl;
-    for(int i{1}; i< row+1; i++)
+    cout<<endl;
+    for(int i{1}; i<= row; i++)
     {
-        if(i==1||i==row)                    /*complete stars are printed only in
-                                              first and last lines*/
-        {
-            for(int j{1}; j<col+1; j++)
-            {
-                std::cout<<" * ";
-            }
+        //*****old code********
+
+        // if(i==1||i==row)                    /*complete stars are printed only in
+        //                                       first and last lines*/
+        // {
+        //     for(int j{1}; j<col+1; j++)
+        //     {
+        //         std::cout<<" * ";
+        //     }
             
-        }
-        else                                
+        // }
+        // else                                
+        // {
+        //     for(int j{1}; j<col+1; j++)     /*complete stars are printed only in 
+        //                                     first and last colomns*/
+        //     {
+        //         if(j==1||j==col)
+        //         {
+        //             std::cout<<" * ";
+        //         }
+        //         else
+        //         {
+        //             std::cout<<"   ";
+        //         }
+        //     }
+        // }
+        // std::cout<<std::endl;
+
+        //******new code********
+
+        for(int j{1}; j<= col; j++)
         {
-            for(int j{1}; j<col+1; j++)     /*complete stars are printed only in 
-                                            first and last colomns*/
-            {
-                if(j==1||j==col)
-                {
-                    std::cout<<" * ";
-                }
-                else
-                {
-                    std::cout<<"   ";
-                }
+            if(i==1 || j==1 || i==row || j==col){
+                cout<<" * ";
+            }
+            else{
+                cout<<"   ";
             }
         }
-        std::cout<<std::endl;
+        cout<<endl;
     }
     return 0;
 }
