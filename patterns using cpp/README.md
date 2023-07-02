@@ -1,6 +1,6 @@
 # cpp
 
-** PLEASE READ THE README FILE IN CODE FORMAT NOT IN PREVIEW FORMAT AS IT IS DESHAPED IN PREVIEW FORMAT **
+
 ```
 1)butterfly pattern for n=5:
       *                 *                                                                                                                                             
