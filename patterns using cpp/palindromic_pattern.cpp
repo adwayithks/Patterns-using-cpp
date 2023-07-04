@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 using namespace std;
@@ -17,8 +16,8 @@ int main()
 
     cout<<" Enter no.of rows of pyramid: ";
     int n{getIntFromUser()};
-    int m{n+2*(n-1)};
-    cout<<m<<endl;
+    // int m{n+2*(n-1)};
+    // cout<<m<<endl;
     for(int i{1}; i<=n; i++)
     {
         // int l{1};
