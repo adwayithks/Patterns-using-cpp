@@ -62,5 +62,69 @@
      *  *  *                                                                                                                                                        
      *  *                                                                                                                                                           
      * 
-     
+
+8) inverted number patter for n=5 :
+
+     1 2 3 4 5 
+     1 2 3 4 
+     1 2 3 
+     1 2 
+     1
+
+9) number patter for n=5 :
+
+         1 
+        1 2 
+       1 2 3 
+      1 2 3 4 
+     1 2 3 4 5
+
+10) palindromic pattern for n=5 :
+
+             1 
+           2 1 2 
+         3 2 1 2 3 
+       4 3 2 1 2 3 4 
+     5 4 3 2 1 2 3 4 5
+
+11) rhombus pattern for row = 5, col = 6 :
+
+         * * * * * * 
+        * * * * * * 
+       * * * * * * 
+      * * * * * * 
+     * * * * * *
+
+12) star pattern for n=5 :
+
+             * 
+           * * * 
+         * * * * * 
+       * * * * * * * 
+     * * * * * * * * * 
+     * * * * * * * * * 
+       * * * * * * * 
+         * * * * * 
+           * * * 
+             *
+
+13) zero-one half pyramid pattern for n=5 :
+
+     1 
+     0 1 
+     1 0 1 
+     0 1 0 1 
+     1 0 1 0 1
+
+14) zig-zag pattern for n=9 :
+
+         *       *     
+       *   *   *   *   
+     *       *       *
+
+     zig-zag pattern for n=6 :
+
+         *       
+       *   *   * 
+     *       *   
 ```
