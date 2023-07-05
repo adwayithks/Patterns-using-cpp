@@ -1,18 +1,16 @@
 #include <iostream>
 
-using namespace std;
-
 int getIntFromUser()
 {
     int input;
-    cin>>input;
+    std::cin>>input;
 //    std::cout<<input;
     return input;
 }
 
 int main()
 {   
-    cout<<" Enter rows for the pyramid : ";
+    std::cout<<" Enter rows for the pyramid : ";
     int n{getIntFromUser()};
     for(int i{1},j{1}; i<=n; i++)
     {
@@ -20,9 +18,9 @@ int main()
                                             //i we want to print the value of i
 
         {
-            cout<<j<<" ";
+            std::cout<<j<<" ";
         }
-        cout<<endl;
+        std::cout<<std::endl;
     }
     return 0;
 }

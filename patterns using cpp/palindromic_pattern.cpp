@@ -1,12 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
-
 int getIntFromUser()
 {
     int input;
-    cin>>input;
+    std::cin>>input;
 //    std::cout<<input;
     return input;
 }
@@ -14,7 +11,7 @@ int getIntFromUser()
 int main()
 {   
 
-    cout<<" Enter no.of rows of pyramid: ";
+    std::cout<<" Enter no.of rows of pyramid: ";
     int n{getIntFromUser()};
     // int m{n+2*(n-1)};
     // cout<<m<<endl;
@@ -49,18 +46,18 @@ int main()
 
         for(int j{1}; j<=2*(n-i); j++)
         {
-            cout<<" ";
+            std::cout<<" ";
         }
         for(int j{1}; j<=i; j++)
         {
-            cout<<i-j+1<<" ";
+            std::cout<<i-j+1<<" ";
         }
         for(int j{1}; j<i; j++)
         {
-            cout<<j+1<<" ";
+            std::cout<<j+1<<" ";
         }
 
-        cout<<endl;
+        std::cout<<std::endl;
     }
     return 0;
 }

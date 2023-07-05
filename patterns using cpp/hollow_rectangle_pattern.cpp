@@ -1,23 +1,21 @@
 #include <iostream>
 
-using namespace std;
-
 int getIntFromUser()
 {
     int input;
-    cin>>input;
+    std::cin>>input;
 //    std::cout<<input;
     return input;
 }
 
 int main()
 {   
-    cout<<" Enter rows and colomns seperated by a space : ";
+    std::cout<<" Enter rows and colomns seperated by a space : ";
     int row{getIntFromUser()};
 //    std::cout<<row;
     int col{getIntFromUser()};
 //    std::cout<<row<<" "<<col<<std::endl;
-    cout<<endl;
+    std::cout<<std::endl;
     for(int i{1}; i<= row; i++)
     {
         //*****old code********
@@ -53,13 +51,13 @@ int main()
         for(int j{1}; j<= col; j++)
         {
             if(i==1 || j==1 || i==row || j==col){
-                cout<<" * ";
+                std::cout<<" * ";
             }
             else{
-                cout<<"   ";
+                std::cout<<"   ";
             }
         }
-        cout<<endl;
+        std::cout<<std::endl;
     }
     return 0;
 }

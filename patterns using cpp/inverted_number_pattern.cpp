@@ -1,25 +1,23 @@
 #include <iostream>
 
-using namespace std;
-
 int getIntFromUser()
 {
     int input;
-    cin>>input;
+    std::cin>>input;
 //    std::cout<<input;
     return input;
 }
 
 int main()
 {   
-    cout<<" Enter no.of rows of pyramid: ";
+    std::cout<<" Enter no.of rows of pyramid: ";
     int n{getIntFromUser()};
     for(int i{n}; i; i--){
         int k=1;
         for(int j{i}; j; j--,k++){
-            cout<<k<<" ";
+            std::cout<<k<<" ";
         }
-        cout<<endl;
+        std::cout<<std::endl;
     }
 
     return 0;

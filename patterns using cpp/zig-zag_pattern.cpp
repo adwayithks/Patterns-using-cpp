@@ -1,12 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
-
 int getIntFromUser()
 {
     int input;
-    cin>>input;
+    std::cin>>input;
 //    std::cout<<input;
     return input;
 }
@@ -16,21 +13,21 @@ void printRow(int i, int m, int n)
     {
         if((i+j)%m==0)
         {
-            cout<<"* ";
+            std::cout<<"* ";
         }
         else
         {
-            cout<<"  ";
+            std::cout<<"  ";
         }
     }
-    cout<<endl;
+    std::cout<<std::endl;
     return;
 }
 
 int main()
 {   
 
-    cout<<" Enter no.of stars for zig-zag pattern : ";
+    std::cout<<" Enter no.of stars for zig-zag pattern : ";
     int n{getIntFromUser()};
     printRow(1,4,n);                        //in row 1 star should be printed wherever (i+j)%4==0
     printRow(2,2,n);                        //in row 2 star should be printed wherever (i+j)%2==0

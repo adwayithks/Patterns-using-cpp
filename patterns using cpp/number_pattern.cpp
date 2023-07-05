@@ -3,13 +3,12 @@
 #include <iostream>
 // #include<vector>
 
-using namespace std;
 /// using namespace std::chrono;
 
 int getIntFromUser()
 {
     int input;
-    cin>>input;
+    std::cin>>input;
 //    std::cout<<input;
     return input;
 }
@@ -17,7 +16,7 @@ int getIntFromUser()
 int main()
 {   
 //triple slashed comments are used for seeing time for executing a function
-    cout<<" Enter no.of rows of pyramid: ";
+    std::cout<<" Enter no.of rows of pyramid: ";
     int n{getIntFromUser()};
 
     /// auto start = high_resolution_clock::now();
@@ -29,11 +28,11 @@ int main()
         {
             if(j<=n-i)
             {
-                cout<<" ";
+                std::cout<<" ";
             }
             else if(l<=i)
             {
-                cout<<l<<" ";
+                std::cout<<l<<" ";
                 l++;
             }
         }
@@ -44,13 +43,13 @@ int main()
 
         // for(int j{1}; j<=n-i; j++)
         // {
-        //     cout<<" ";
+        //     std::cout<<" ";
         // }
         // for(int j{1}; j<=i; j++)
         // {
-        //     cout<<j<<" ";
+        //     std::cout<<j<<" ";
         // }
-        cout<<endl;
+        std::cout<<std::endl;
     }
     /// auto stop = high_resolution_clock::now();
     /// auto duration = duration_cast<microseconds>(stop - start);
