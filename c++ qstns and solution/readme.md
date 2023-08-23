@@ -1,4 +1,4 @@
-``
+```
 the solutions of the given problems is uploaded as code in this folder.
 
     set 1:-
@@ -63,4 +63,4 @@ the solutions of the given problems is uploaded as code in this folder.
 7.  Write a C++ program to remove the consecutive repeated characters from a string
     entered by the user. Also count the number of characters in the string before and
     after processing.
-``
+```
